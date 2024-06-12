@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ecoempaque</title>
+  <meta name="theme-color" content="#66ff66">
+  <meta name="MobileOptimized" content="width">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" href="img/logo.jpeg">
+  <link rel="apple-touch-icon" href="img/logo.jpeg">
+  <link rel="apple-touch-startup-image" href="img/logo.jpeg">
+  <link rel="manifest" href="manifest.json">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      min-height: 100%;
+      font-size: 16px;
+    }
+    .container {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(#3f87a6 10%, #ebf8e1a2 10%),
+                  linear-gradient(to right, #ebf8e100 10%, #c73030 10.2%, #ebf8e100 10.5%);
+      background-size: 100% 25px, 100% 100%;
+      background-repeat: repeat, no-repeat;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: greenyellow;
+      font-size: 3em;
+      text-align: center;
+      margin: 20px 0;
+    }
+    u {
+      color: greenyellow;
+    }
+    nav {
+      background-color: greenyellow; 
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav .logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    nav .logo img {
+      height: 60px;
+      width: auto;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    nav li {
+      display: inline-block;
+    }
+    nav li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav li a:hover {
+      background-color: #009900;
+    }
+    nav li a.active {
+      background-color: #4DD0E1;
+      color: white;
+    }
+    h2 {
+      color: darkgreen;
+      font-size: 2em;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .books-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+    }
+    .book {
+      position: relative;
+      width: 220px;
+      height: 300px;
+      background-color: whitesmoke;
+      border-radius: 10px;
+      box-shadow: 1px 1px 12px #000;
+      overflow: hidden;
+    }
+    .book .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: lightgray;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: opacity 0.5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .book .cover img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .book:hover .cover {
+      opacity: 0;
+    }
+    .book ul {
+      margin: 0;
+      padding: 10px;
+      list-style-type: none;
+      text-align: left;
+    }
+    .book ul li {
+      font-size: 1em;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    h3 {
+      color: orangered;
+      font-size: 2.5em;
+      text-align: center;
+      margin: 20px 0;
+    }
+    footer {
+      background-color: greenyellow;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer h4, footer h5 {
+      color: darkgreen;
+      margin: 10px 0;
+    }
+    footer a {
+      font-size: 1em;
+      color: darkgreen;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    footer img {
+      vertical-align: middle;
+      margin: 0 10px;
+    }
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 2.5em;
+      }
+      h2, h3 {
+        font-size: 1.5em;
+      }
+      .book {
+        width: 180px;
+        height: 250px;
+      }
+      .book ul li {
+        font-size: 0.9em;
+      }
+    }
+    @media (max-width: 480px) {
+      body {
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      h2, h3 {
+        font-size: 1.2em;
+      }
+      .book {
+        width: 150px;
+        height: 200px;
+      }
+      .book ul li {
+        font-size: 0.8em;
+      }
+    }
+    p{
+      color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <u><h1>ECOEMPAQUE</h1></u>
+    <nav>
+      <div class="logo">
+        <img src="img/logo.jpeg" alt="Logo">
+      </div>
+      <ul>
+        <li><a href="misionvision.html">Misión y Visión</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="objetivos.html">Nuestros objetivos</a></li>
+        <li><a href="compra.html">Compra Ahora</a></li>
+      </ul>
+    </nav>
+    <h2><strong>Productos en oferta 10% off</strong></h2>
+    <div class="books-container">
+      <div class="book">
+        <ul>
+          <li>Color: Azul</li>
+          <li>Adorno: Hilos con estrellas y corazones</li>
+          <li>Medida: Mediana</li>
+        </ul>
+        <div class="cover">
+          <img src="img/producto1.jpeg" alt="Producto 1">
+        </div>
+      </div>
+      <div class="book">
+        <ul>
+          <li>Color: Completamente cubierta de piedras decorativas</li>
+          <li>Medida: Grande</li>
+        </ul>
+        <div class="cover">
+          <img src="img/producto2.jpeg" alt="Producto 2">
+        </div>
+      </div>
+      <div class="book">
+        <ul>
+          <li>Color: Completamente cubierta de rocas</li>
+          <li>Medida: Chica</li>
+        </ul>
+        <div class="cover">
+          <img src="img/producto3.jpeg" alt="Producto 3">
+        </div>
+      </div>
+      <div class="book">
+        <ul>
+          <li>Color: Blanco</li>
+          <li>Adorno: Listón rosa</li>
+          <li>Medida: Chica</li>
+        </ul>
+        <div class="cover">
+          <img src="img/producto4.jpeg" alt="Producto 4">
+        </div>
+      </div>
+    </div>
+    <h3><strong>Conoce nuestros productos 100% reciclados</strong></h3>
+    <h2>Conócenos</h2>
+    <center>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/HfHvBoGxnZQ?si=zUu7flI5yiSvThYL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </center>
+  </div>
+  <footer>
+    <h4>Sobre nosotros</h4>
+    <a href="https://www.instagram.com/eco_empaque00/">
+      <img src="img/insta.jpg" width="50" height="50" alt="Instagram">@eco_empaque00
+    </a>
+    <a href="https://www.facebook.com/profile.php?id=61558259446827&sk=map">
+      <img src="img/face.png" width="50" height="50" alt="Facebook">Eco empaque
+    </a>
+    <h5>Contáctanos</h5>
+    <a href="mailto:empaqueeco0@gmail.com" style="float: right;">Enviar correo</a>
+    <h5>771 357 5103</h5>
+    <center><p>2024 términos y servicios, tienda en línea derechos reservados</p></center>
+  </footer>
+</body>
+</html>
